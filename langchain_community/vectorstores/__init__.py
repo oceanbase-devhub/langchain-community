@@ -188,6 +188,9 @@ if TYPE_CHECKING:
     from langchain_community.vectorstores.neo4j_vector import (
         Neo4jVector,
     )
+    from langchain_community.vectorstores.oceanbase import (
+        OceanBase,
+    )
     from langchain_community.vectorstores.opensearch_vector_search import (
         OpenSearchVectorSearch,
     )
@@ -229,6 +232,9 @@ if TYPE_CHECKING:
     )
     from langchain_community.vectorstores.sklearn import (
         SKLearnVectorStore,
+    )
+    from langchain_community.vectorstores.sqlitevec import (
+        SQLiteVec,
     )
     from langchain_community.vectorstores.sqlitevss import (
         SQLiteVSS,
@@ -369,6 +375,7 @@ __all__ = [
     "Neo4jVector",
     "NeuralDBClientVectorStore",
     "NeuralDBVectorStore",
+    "OceanBase",
     "OracleVS",
     "OpenSearchVectorSearch",
     "PGEmbedding",
@@ -380,6 +387,7 @@ __all__ = [
     "Relyt",
     "Rockset",
     "SKLearnVectorStore",
+    "SQLiteVec",
     "SQLiteVSS",
     "ScaNN",
     "SemaDB",
@@ -472,6 +480,7 @@ _module_lookup = {
     "Neo4jVector": "langchain_community.vectorstores.neo4j_vector",
     "NeuralDBClientVectorStore": "langchain_community.vectorstores.thirdai_neuraldb",
     "NeuralDBVectorStore": "langchain_community.vectorstores.thirdai_neuraldb",
+    "OceanBase": "langchain_community.vectorstores.oceanbase",
     "OpenSearchVectorSearch": "langchain_community.vectorstores.opensearch_vector_search",  # noqa: E501
     "OracleVS": "langchain_community.vectorstores.oraclevs",
     "PathwayVectorClient": "langchain_community.vectorstores.pathway",
@@ -483,6 +492,7 @@ _module_lookup = {
     "Relyt": "langchain_community.vectorstores.relyt",
     "Rockset": "langchain_community.vectorstores.rocksetdb",
     "SKLearnVectorStore": "langchain_community.vectorstores.sklearn",
+    "SQLiteVec": "langchain_community.vectorstores.sqlitevec",
     "SQLiteVSS": "langchain_community.vectorstores.sqlitevss",
     "ScaNN": "langchain_community.vectorstores.scann",
     "SemaDB": "langchain_community.vectorstores.semadb",
